@@ -1,0 +1,4 @@
+Pacific "#006699"
+Mountain "#CCFF00"
+Central "#FF9900"
+Eastern "#990099"

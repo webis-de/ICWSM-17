@@ -1,0 +1,31 @@
+en US United States
+en GB United Kingdom
+en CA Canada
+en IN India
+en AU Australia
+en DE Germany
+en PH Philippines
+en IE Ireland
+en FR France
+en NL Netherlands
+en IT Italy
+en NZ New Zealand
+en ES Spain
+de DE Germany
+de AT Austria
+de CH Switzerland
+fr FR France
+fr BE Belgium
+fr CH Switzerland
+es ES Spain
+es MX Mexico
+es CL Chile
+es CO Colombia
+es AR Argentina
+es PE Peru
+es VE Venezuela
+ru RU Russian Federation
+ru UA Ukraine
+ru BY Belarus
+it IT Italy
+ja JP Japan

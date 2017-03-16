@@ -1,0 +1,93 @@
+\def\year{2017}\relax
+\documentclass[letterpaper]{article}
+\usepackage{aaai17}
+\usepackage{times}
+\usepackage{helvet}
+\usepackage{courier}
+\usepackage{url}
+\usepackage{graphicx}
+\frenchspacing
+\setlength{\pdfpagewidth}{8.5in}
+\setlength{\pdfpageheight}{11in}
+
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{fancyhdr}
+%\pagenumbering{gobble}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\title{Spatio-temporal Analysis of Reverted Wikipedia Edits\\\Large Supplementary Material}
+
+\author{Johannes Kiesel \and Martin Potthast \and Matthias Hagen \and Benno Stein\\
+Bauhaus-Universit\"at Weimar \\
+$<$first name$>$.$<$last name$>$@uni-weimar.de}
+
+\begin{document}
+\maketitle
+
+\noindent
+This document contains the supplementary material to the paper {\em Spatio-temporal Analysis of Reverted Wikipedia Edits}, which is published at the 11th International AAAI Conference on Web and Social Media (ICWSM 17). You can access the paper here:\\{\url{http://www.uni-weimar.de/medien/webis/publications/papers/stein_2017e.pdf}}\ .\\[.2\baselineskip]
+%
+All analysis is based on the May 1st 2016 history dumps of the Wikipedia variants.\\[.2\baselineskip]
+%
+The material is structured by the variant of Wikipedia used in the analysis. The analyzed variants are the ones with the most edits in May 2016: (1)~English, (2)~German, (3)~French, (4)~Spanish, (5)~Russian, (6)~Italian, and (7)~Japanese.\\[.2\baselineskip]
+%
+For each variant, the results of the analysis (tables and figures) are provided according to the same order that is used in the paper: Mining Vandalism (Section~3 in the paper), Geolocating Editors (Section~4), and Spatio-Temporal Analysis (Section~5).\\[.2\baselineskip]
+%
+Please consult the paper for more information on the procedure that produced the results.
+
+\bigskip
+\noindent
+We now list some interesting observations that we could not discuss in the paper:\\[.2\baselineskip]
+\noindent{\bf Mining Vandalism}
+\begin{itemize}
+\item
+While the steps we employ to filter harmless or ambiguous reverts are language independent, the percentage of reverts they filter is rather different for the different variants of Wikipedia. After filtering ambiguous reverts, the following percentages of assumed vandalism edits remain (in comparison to before filtering):
+Russian 48.4\%,
+Spanish 48.1\%,
+French 44.7\%,
+Italian 41.1\%,
+German 38.1\%,
+Japanese 35.9\%, and
+English 33.1\%.
+This hints at different frequencies of revert patterns in the Wikipedias. For example, while in the English Wikipedia 37.5\% of the original reverted edits are due to reverts between page blanks, the same statistic is only 6.1\% for the Russian Wikipedia.
+\item
+For all variants of Wikipedia, the number of reverts with a specific number of reverted edits follow clearly a exponential model.
+\end{itemize}
+
+\noindent{\bf Geolocating Editors}
+\begin{itemize}
+\item
+For all variants of Wikipedia, most anonymous edits can be geolocated with an agreement of all GeoDBs in the RIR entry time span (step~4 in the decision tree):
+Japanese 94.6\%,
+German 90.6\%,
+French 88.2\%,
+Italian 84.5\%,
+Russian 81.0\%,
+Spanish 80.1\%,
+English 72.3\%.
+\item
+Most of these geolocations mentioned above use 7 or more of the 10~GeoDBs. This is likely due to 3~GeoDBs being from 2008 and therefore considerably older than the other 7~GeoDBs (from 2014 to 2016). Therefore, an IP-based geolocation seems to be rather stable for the last few years, and 2~year old GeoDBs seem to be still usable for current geolocations.
+\end{itemize}
+
+\noindent{\bf Spatio-Temporal Analysis}
+\begin{itemize}
+\item
+The highest vandalism ratio we observed from Chile ($\sim$52\%), as usually between 8~to 9~hours (p.\ 34).
+\item
+For most analyzed countries, Summer is the season with the lowest vandalism with a distinctly flat course over the day. Exceptions are:
+The Philippines, where Spring takes the place of Summer (p.\ 10);
+Colombia, where Summer is on the same level as Spring and Winter (p.\ 35);
+and Japan, where there is nearly no vandalism at any time (p.\ 55).
+Note that we use the hemisphere of the geolocation to determine the season of a edit.
+\item
+Like most other analyzed countries, Mexico, Colombia, Argentina, Peru, and Venezuela also have one peaks at 8~to 9~hours and another one in the afternoon. However, the afternoon peak is much more dominant for these countries (p.\ 34, 35, 36). Surprisingly, this is very different to Chile (p.\ 34).
+\item
+The vandalism ratios for the Russian Wikipedia do not change much over the day---also for edits from the Ukraine and Belarus (p.\ 42, 43). There is only a slight increase in vandalism on Monday to Thursday afternoons.
+\item
+For the Italian Wikipedia, Friday is similar to Monday to Thursday, but Saturday follows the usual course of Friday (like a working day in the morning and like a weekend day in the afternoon; p.\ 49).
+\end{itemize}
+\onecolumn
+\clearpage

@@ -1,0 +1,17 @@
+\documentclass{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\usepackage{graphicx}
+\usepackage{color}
+\DeclareGraphicsRule{.ai}{pdf}{*}{}% Handle .ai files as .pdf files.
+\DeclareGraphicsExtensions{.pdf,.ai,.jpg,.png}
+\pdfpagebox 5% Use ArtBox instead MediaBox. 1=MediaBox, 2=CropBox, 3=BleedBox, 4=TrimBox, 5=ArtBox. (shell: pdfinfo -box <pdf-file>)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\fontfamily{phv}\fontsize{7pt}{8.4pt}\selectfont
+\input{geolocation-decision-tree-input}
+\end{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
